@@ -82,25 +82,25 @@
   ],
   "output": [
     {
-      "type": "v2rayGeoIPDat",
+      "type": "text",
       "action": "output",
       "args": {
-        "outputName": "geoip.dat"
+        "outputName": "geoip.txt"
       }
     },
     {
-      "type": "v2rayGeoIPDat",
+      "type": "text",
       "action": "output",
       "args": {
-        "outputName": "geoip-only-cn-private.dat",
+        "outputName": "geoip-only-cn-private.txt",
         "wantedList": ["cn", "private"]
       }
     },
     {
-      "type": "v2rayGeoIPDat",
+      "type": "text",
       "action": "output",
       "args": {
-        "outputName": "geoip-asn.dat",
+        "outputName": "geoip-asn.txt",
         "wantedList": [
           "cloudflare",
           "cloudfront",
@@ -114,7 +114,7 @@
       }
     },
     {
-      "type": "v2rayGeoIPDat",
+      "type": "text",
       "action": "output",
       "args": {
         "oneFilePerList": true,
