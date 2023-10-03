@@ -92,7 +92,14 @@ jobs:
       - name: zip files for text an move to publish directory
         run: |
           cd ./output/text || exit 1
-          zip ./geoip_txt.zip ./*.txt
+          zip geoip_txt.zip ./*.txt
+
+      - name: Generate sha256 checksum for zip files
+        run: |
+          cd ./output/text || exit 1
+          for name in $(ls geoip_txt.zip); do
+            sha256sum ${name} > ./${name}.sha256sum
+          done
 
       - name: Move files to publish directory
         run: |
