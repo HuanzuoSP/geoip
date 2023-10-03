@@ -99,50 +99,6 @@
       }
     },
     {
-      "type": "maxmindMMDB",
-      "action": "output",
-      "args": {
-        "outputName": "Country.mmdb",
-        "overwriteList": [
-          "cn",
-          "private",
-          "cloudflare",
-          "cloudfront",
-          "facebook",
-          "fastly",
-          "google",
-          "netflix",
-          "telegram",
-          "twitter"
-        ]
-      }
-    },
-    {
-      "type": "maxmindMMDB",
-      "action": "output",
-      "args": {
-        "outputName": "Country-only-cn-private.mmdb",
-        "wantedList": ["cn", "private"]
-      }
-    },
-    {
-      "type": "maxmindMMDB",
-      "action": "output",
-      "args": {
-        "outputName": "Country-asn.mmdb",
-        "wantedList": [
-          "cloudflare",
-          "cloudfront",
-          "facebook",
-          "fastly",
-          "google",
-          "netflix",
-          "telegram",
-          "twitter"
-        ]
-      }
-    },
-    {
       "type": "text",
       "action": "output"
     }
