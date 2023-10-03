@@ -116,7 +116,7 @@ jobs:
           done
 
       - name: Remove some files to avoid publishing to GitHub release
-        run: rm -rf  ./publish/!(geoip_country.zip) ./publish/text
+        run: rm -rf  ./publish/GeoLite2* ./publish/text
 
       - name: Upload files to GitHub release
         uses: svenstaro/upload-release-action@v2
