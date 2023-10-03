@@ -92,7 +92,7 @@ jobs:
       - name: zip files for text an move to publish directory
         run: |
           cd ./output/text || exit 1
-          zip geoip_txt.zip ./*.txt
+          zip ./geoip_txt.zip ./*.txt
 
       - name: Move files to publish directory
         run: |
