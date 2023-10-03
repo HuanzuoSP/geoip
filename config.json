@@ -83,22 +83,6 @@
   "output": [
     {
       "type": "text",
-      "action": "output",
-      "args": {
-        "wantedList": [
-          "cloudflare",
-          "cloudfront",
-          "facebook",
-          "fastly",
-          "google",
-          "netflix",
-          "telegram",
-          "twitter"
-        ]
-      }
-    },
-    {
-      "type": "text",
       "action": "output"
     }
   ]
