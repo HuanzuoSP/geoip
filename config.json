@@ -93,7 +93,7 @@
       "type": "text",
       "action": "output",
       "args": {
-        "outputDir": "./publish",
+        "outputName": "geoip-only-cn-private.txt",
         "wantedList": ["cn", "private"]
       }
     },
