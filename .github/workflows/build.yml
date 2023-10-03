@@ -97,7 +97,7 @@ jobs:
       - name: Move files to publish directory
         run: |
           mkdir -p publish
-          mv geoip_txt.zip *.gz *.zip ./publish/
+          mv ./output/text/geoip_txt.zip *.gz *.zip ./publish/
           cp -fpPR ./output/text ./publish
 
       - name: Git push assets to "release" branch
