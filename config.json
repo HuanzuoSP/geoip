@@ -85,21 +85,6 @@
       "type": "text",
       "action": "output",
       "args": {
-        "outputName": "geoip.txt"
-      }
-    },
-    {
-      "type": "text",
-      "action": "output",
-      "args": {
-        "outputName": "geoip-only-cn-private.txt",
-        "wantedList": ["cn", "private"]
-      }
-    },
-    {
-      "type": "text",
-      "action": "output",
-      "args": {
         "outputName": "geoip-asn.txt",
         "wantedList": [
           "cloudflare",
@@ -111,14 +96,6 @@
           "telegram",
           "twitter"
         ]
-      }
-    },
-    {
-      "type": "text",
-      "action": "output",
-      "args": {
-        "oneFilePerList": true,
-        "wantedList": ["cn", "private"]
       }
     },
     {
