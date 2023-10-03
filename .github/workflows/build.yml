@@ -69,6 +69,7 @@ jobs:
       - name: Generate sha256 checksum for dat files
         run: |
           cd ./output/text || exit 1
+          zip geoip_country.zip ./*.txt
           for name in $(ls *.txt); do
             sha256sum ${name} > ./${name}.sha256sum
           done
@@ -92,7 +93,7 @@ jobs:
       - name: Move files to publish directory
         run: |
           mkdir -p publish
-          mv ./output/text/cn.txt *.gz *.zip ./publish/
+          mv ./output/text/cn.txt ./output/text/geoip_country.zip *.gz *.zip ./publish/
           cp -fpPR ./output/text ./publish
 
       - name: Git push assets to "release" branch
