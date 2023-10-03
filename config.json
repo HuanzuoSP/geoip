@@ -85,7 +85,6 @@
       "type": "text",
       "action": "output",
       "args": {
-        "outputDir": "./publish",
         "outputName": "geoip.txt"
       }
     },
