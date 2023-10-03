@@ -85,7 +85,6 @@
       "type": "text",
       "action": "output",
       "args": {
-        "outputName": "geoip-asn.txt",
         "wantedList": [
           "cloudflare",
           "cloudfront",
@@ -97,10 +96,6 @@
           "twitter"
         ]
       }
-    },
-    {
-      "type": "text",
-      "action": "output"
     }
   ]
 }
