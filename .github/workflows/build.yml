@@ -93,7 +93,7 @@ jobs:
       - name: Move files to publish directory
         run: |
           mkdir -p publish
-          mv ./output/text/cn.txt us.txt hk.txt jp.txt cloudflare.txt google.txt facebook.txt twitter.txt netflix.txt private.txt telegram.txt  ./output/text/geoip_country.zip *.gz *.zip ./publish/
+          mv ./output/text/cn.txt ./output/text/us.txt ./output/text/hk.txt ./output/text/jp.txt ./output/text/cloudflare.txt ./output/text/google.txt ./output/text/facebook.txt ./output/text/twitter.txt ./output/text/netflix.txt ./output/text/private.txt ./output/text/telegram.txt  ./output/text/geoip_country.zip *.gz *.zip ./publish/
           cp -fpPR ./output/text ./publish
 
       - name: Git push assets to "release" branch
